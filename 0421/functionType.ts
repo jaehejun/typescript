@@ -51,9 +51,13 @@ console.log(removeDash('010-2222-2222')); //01022222222
 // console.log(removeDash2Number('010-2222-2222')); //1022222222
 
 function removeDash2Number(str:string) {
-    return Number(str.replace(/^0+/,'').replace(/-/g,''));
-    // parseInt(str, base(기본10진수)) -> 문자열 앞부분부터 숫자 형태로 해석 가능한 부분까지만 반환, 문자열이 숫자로 시작하지 않으면 NaN반환
-    // Number(str) -> 문자열 전체가 유효한 숫자일 때만 정확하게 변환,모든 숫자 형식 지원, 실패시 NaN반환
+    return parseInt(str.replace(/^0+/,'').replace(/-/g,''));
+    // parseInt(str, base(기본10진수))
+    // -> 문자열 앞부분부터 숫자 형태로 해석 가능한 부분까지만 반환:문자열에서 뽑거나 소수 무시할때 사용용
+    // -> 문자열이 숫자로 시작하지 않으면 NaN반환
+    // Number(str)
+    // -> 문자열 전체가 유효한 숫자일 때만 정확하게 변환:정확한 숫자 필요할때 사용
+    // -> 모든 숫자 형식 지원, 실패시 NaN반환
 }
 
 console.log(removeDash2Number('010-2222-2222')); //1022222222
