@@ -92,7 +92,7 @@
 // console.log(obj2.hello);
 
 
-//다음의 조건을 만족하는 type alias 만들기
+//연습문제 다음의 조건을 만족하는 type alias 만들기
 // object 자료형
 // color라는 속성을 가질 수도 있으며 항상 문자여야함
 // size라는 속성이 있어야 하며 항상 숫자여야함
@@ -106,7 +106,7 @@
 // type MyType = {
 //     color?:string // ?string또는undefined
 //     size:number
-//     readonly position:number[] //readonly:읽기전용속성성
+//     readonly position:number[] //readonly:읽기전용속성
 // };
 // console.log(x);
 // x.position=[1,2,3,4]; // cannot assign because read-only property
@@ -180,6 +180,7 @@
 // let age = undefined;
 // let married = false;
 // let conan = [user,age,married];
+
 // let user:string = '코난';
 // let age:number|undefined = undefined;
 // let married:boolean = false;

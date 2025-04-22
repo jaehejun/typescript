@@ -157,19 +157,19 @@
 
 
 
-// let onlyString:string = Math.random() > 0.5 ? '문자열할당' : undefined;
+let onlyString:string = Math.random() > 0.5 ? '문자열할당' : undefined;
 
-// const tenObject: {
-//     id:number;
-//     value:number;
-// }
+const tenObject: {
+    id:number;
+    value:number;
+}
 
-// const someObjects = Array.from({ length:5}, (_, idx) => ({
-//     id: idx + 1,
-//     value: (idx + 1) * 10,
-// }));
+const someObjects = Array.from({ length:5}, (_, idx) => ({
+    id: idx + 1,
+    value: (idx + 1) * 10,
+}));
 
-// const tenObject = someObjects.find(({value}) => value === 10);
+const tenObject = someObjects.find(({value}) => value === 10);
 
-// tenObject.id; //Type Error 'tenObject' is possibly 'undefined'
-// tenObject?.id; //OK
+tenObject.id; //Type Error 'tenObject' is possibly 'undefined'
+tenObject?.id; //OK
